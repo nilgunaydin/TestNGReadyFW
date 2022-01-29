@@ -10,6 +10,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import java.time.Duration;
+import java.util.Set;
+
 public class C03_iFrame {
     //  ● Bir class olusturun: IframeTest
     WebDriver driver;
@@ -30,6 +32,8 @@ public class C03_iFrame {
         SoftAssert softAssert=new SoftAssert();
         softAssert.assertTrue(istenenYaziElementi.isEnabled(),"Iframe yazisi gorunmuyor");
         System.out.println(istenenYaziElementi.getText());
+        String Handle1= driver.getWindowHandle();
+        
         //      ○ Text Box’a “Merhaba Dunya!” yazin.
         // yazi yazmak istedigimiz text kutusu iframe'in icinde oldugundan direk ulasamiyoruz
         // once iframe'i locate edip, onun icine switch yapmaliyiz
@@ -46,10 +50,17 @@ public class C03_iFrame {
         //  yeni sayfada "Sponsored by Sauce Labs"    textinin gorunur oldugunu dogrulayin ve  konsolda yazdirin.
         // sponsored yazisi yeni sayfada oldugundan ve driver eski sayfada kaldigindan
         // yaziyi locate edemedik.....
-        WebElement sponsoredYazisiElementi=driver.findElement(By.xpath("//p[text()='Sponsored by ']"));
+        Set<String> WindowHandles= driver.getWindowHandles();
+        String Handle2 = "";
+        for (String w: WindowHandles)
+             {if(!w.equals(Handle1)){Handle2=w;}}
+        driver.switchTo().window(Handle2);
+        WebElement sponsoredYazisiElementi=driver.findElement(By.xpath("//p[@class='subheader']"));
         softAssert.assertTrue(sponsoredYazisiElementi.isDisplayed(),"Sponsored yazisi gorunmuyor");
         softAssert.assertAll();
-    }
+        }
+
+
 
     @AfterClass
     public void teardown(){
