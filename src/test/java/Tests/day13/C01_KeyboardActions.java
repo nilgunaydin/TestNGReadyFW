@@ -17,8 +17,7 @@ public class C01_KeyboardActions extends TestBase {
         driver.get("https://html.com/tags/iframe/");
         //3- video’yu gorecek kadar asagi inin
         Actions actions = new Actions(driver);
-        actions.sendKeys(Keys.PAGE_DOWN)
-                .sendKeys(Keys.PAGE_DOWN)
+        actions.sendKeys(Keys.PAGE_DOWN,Keys.PAGE_DOWN)
                 .sendKeys(Keys.ARROW_UP)
                 .perform();
         //4- videoyu izlemek icin Play tusuna basin
@@ -29,6 +28,6 @@ public class C01_KeyboardActions extends TestBase {
         //5- videoyu calistirdiginizi test edin
         WebElement pauseButton = driver.findElement(By.xpath("//button[@title='Pause (k)']"));
         Assert.assertTrue(pauseButton.isEnabled());
-        Thread.sleep(10000);
+        Thread.sleep(100000);
     }
 }

@@ -21,7 +21,7 @@ public class C02_FileExists {
             System.out.println("user.dir  : " + System.getProperty("user.dir"));
             // Masaustunde Deneme klasoru icerisinde selenium.xlsx isminde bir dosya oldugunu test edin
             // 1- once bu dosyaya ulasmak icin gerekli dinamik path olusturalim
-            String dosyaYolu = System.getProperty("user.home") + "\\Desktop\\Deneme\\selenium.xlsx";
+            String dosyaYolu = System.getProperty("user.home") + "\\OneDrive\\Desktop\\Deneme\\selenium.xlsx";
             System.out.println(Files.exists(Paths.get(dosyaYolu)));
             // projemizde pom.xml oldugunu test edin
             //C:\Users\Lenovo\B44-QA-TR\06-Selenium\com.TestNGBatch44\pom.xml
