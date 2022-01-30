@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 
@@ -19,7 +20,7 @@ public class time extends TestBase {
         driver.get("https://www.bigtimer.net/?minutes=10&repeat=false");
         WebElement button = driver.findElement(By.xpath("//button[@class='button primary-primary with-label hideable start-pause']"));
        button.click();
+     //  WebDriverWait wait = new WebDriverWait(driver,);
 
-      driver.wait();
     }
 }

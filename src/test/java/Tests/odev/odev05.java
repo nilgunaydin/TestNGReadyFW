@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.List;
 
-public class odev5 {
+public class odev05 {
     static WebDriver driver;
 @BeforeClass
     static  public void  setup(){

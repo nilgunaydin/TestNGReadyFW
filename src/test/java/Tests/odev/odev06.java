@@ -1,6 +1,6 @@
 package Tests.odev;
 
-public class odev6 {
+public class odev06 {
     //● https://the-internet.herokuapp.com/windows adresine gidin.
     //● Sayfadaki textin “Opening a new window” olduğunu doğrulayın.
     //● Sayfa başlığının(title) “The Internet” olduğunu doğrulayın.
