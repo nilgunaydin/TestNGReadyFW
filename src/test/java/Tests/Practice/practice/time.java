@@ -1,4 +1,4 @@
-package Tests.practice;
+package Tests.Practice.practice;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -17,10 +17,11 @@ public class time extends TestBase {
 
     public void timeTest() throws InterruptedException {
         ChromeOptions opt = new ChromeOptions();
-        driver.get("https://www.bigtimer.net/?minutes=10&repeat=false");
-        WebElement button = driver.findElement(By.xpath("//button[@class='button primary-primary with-label hideable start-pause']"));
-       button.click();
+      driver.get("chrome-extension://mkmibbgbhhpfkdmeeedanbicgnddijcf/main.html");
+        //  driver.get("https://www.bigtimer.net/?minutes=10&repeat=false");
+     //   WebElement button = driver.findElement(By.xpath("//button[@class='button primary-primary with-label hideable start-pause']"));
+      // button.click();
      //  WebDriverWait wait = new WebDriverWait(driver,);
-
+Thread.sleep(5000);
     }
 }
