@@ -12,6 +12,9 @@ import java.util.List;
 public class TekrarTesti extends TestBase {
     @Test
     public void test(){
+        //amazona gidin
+        //arama kutusunn solundaki dropdown menuyu handle edip lisetesini ekrana yazdirin
+        //dropdown menüde 28 eleman oldugunu dogrulayın
         driver.get("https://www.amazon.com");
      WebElement dd =    driver.findElement(By.xpath("//select[@id='searchDropdownBox']"));
     dd.click();

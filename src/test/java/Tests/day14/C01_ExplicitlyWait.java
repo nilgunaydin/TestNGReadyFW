@@ -50,7 +50,6 @@ public class C01_ExplicitlyWait extends TestBase {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[text()=\"It's gone!\"]")));
         WebElement itsGoneElemnti=driver.findElement(By.xpath("//p[text()=\"It's gone!\"]"));
         Assert.assertTrue(itsGoneElemnti.isDisplayed());
-        Thread.sleep(3000);
         //6. Add buttonuna basin
         driver.findElement(By.xpath("//button[text()='Add']")).click();
         //7. It’s back mesajinin gorundugunu test edin
