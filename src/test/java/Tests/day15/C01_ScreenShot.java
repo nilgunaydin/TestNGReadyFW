@@ -24,8 +24,7 @@ public class C01_ScreenShot extends TestBase {
 
         File geciciResim = takenScreenshot.getScreenshotAs(OutputType.FILE);
 
-        FileUtils.copyFile(geciciResim,WholePage);
-
+        FileUtils.copyFile(geciciResim,WholePage);//hello
 
     }
 }
