@@ -35,7 +35,7 @@ public class C02_Faker extends TestBase {
         String email=faker.internet().emailAddress();
       actions.click(firstName).sendKeys(faker.name().name()).sendKeys(Keys.TAB).sendKeys(faker.name().lastName()).sendKeys(Keys.TAB)
               .sendKeys(email).sendKeys(Keys.TAB).sendKeys(email).sendKeys(Keys.TAB).sendKeys(faker.internet().password()).
-              sendKeys(Keys.TAB , Keys.TAB).sendKeys("12").sendKeys(Keys.TAB , Keys.TAB).sendKeys("1995").sendKeys(Keys.TAB, Keys.TAB).
+              sendKeys(Keys.TAB , Keys.TAB,"12",Keys.TAB , Keys.TAB,"1995",Keys.TAB, Keys.TAB).
               sendKeys(Keys.ARROW_DOWN,Keys.ARROW_LEFT).click().
               perform();
 
@@ -43,7 +43,8 @@ public class C02_Faker extends TestBase {
         //Isaretlediginiz cinsiyetin secili, diger cinsiyet kutusunun secili olmadigini test edin.
         Assert.assertTrue(driver.findElement(By.xpath(("//input[@value='1']"))).isSelected());
         Assert.assertFalse(driver.findElement(By.xpath(("//input[@value='2']"))).isSelected());
-
+    //driver.findElement(By.xpath("//button[@id='u_2_s_Vj']")).click();
     //Sayfayi kapatin
+
 }
 }

@@ -21,7 +21,6 @@ public class elifOdev03 extends TestBase {
     driver.get("https://www.jqueryscript.net/demo/bootstrap-alert-box/");
     driver.manage().window().maximize();
     driver.findElement(By.id("action")).click();
-
     WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(15));
     wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("dialog-mycodemyway-action"))).click();
  //   wait.until(ExpectedConditions.alertIsPresent());
