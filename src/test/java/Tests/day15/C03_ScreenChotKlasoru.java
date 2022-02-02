@@ -27,7 +27,7 @@ public class C03_ScreenChotKlasoru extends TestBase {
         searchBox = driver.findElement(By.id("twotabsearchtextbox"));
         searchBox.clear();
         searchBox.sendKeys("nutella", Keys.ENTER);
-        WholePageSS();
+        WholePageSS("nutellaAramasi");
     }
     @Test (priority = 2)
     public void elmatest() throws IOException {

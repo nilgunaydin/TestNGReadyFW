@@ -39,6 +39,11 @@ protected WebDriver driver;
         File geciciResim=tss.getScreenshotAs(OutputType.FILE);
         FileUtils.copyFile(geciciResim,screenshot);
     }
-
+    public void WholePageSS(String isim ) throws IOException {
+        TakesScreenshot tss = (TakesScreenshot) driver;
+        File screenshot = new File("target/screenShot/wholePageOf"+isim+".png");
+        File geciciResim=tss.getScreenshotAs(OutputType.FILE);
+        FileUtils.copyFile(geciciResim,screenshot);
+    }
 
 }

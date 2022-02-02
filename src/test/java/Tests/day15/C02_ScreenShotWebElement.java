@@ -18,7 +18,9 @@ public class C02_ScreenShotWebElement extends TestBase {
         searchBox.sendKeys("nutella", Keys.ENTER);
         WebElement sonucYazisiElementi = driver.findElement(By.xpath("//div[@class='sg-col-inner']"));
         Assert.assertTrue(sonucYazisiElementi.getText().contains("nutella"));
-//lets take ss of whole page
+    //lets take ss of a  webelement
+
+    //burada resmi cekilecek webelementi locate etmek de vardi ama we allready have one
 
         File resultTextWebElement = new File("target/screenShot/resultText.jpeg");
 
