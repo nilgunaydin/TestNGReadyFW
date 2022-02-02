@@ -18,13 +18,7 @@ public class C01_ScreenShot extends TestBase {
         Assert.assertTrue(driver.findElement(By.xpath("//div[@class='sg-col-inner']")).getText().contains("nutella"));
 //lets take ss of whole page
         TakesScreenshot takenScreenshot = (TakesScreenshot) driver;
-
-
         File WholePage = new File("target/screenShot/wholePage.png");
-
         File geciciResim = takenScreenshot.getScreenshotAs(OutputType.FILE);
-
         FileUtils.copyFile(geciciResim,WholePage);//hello
-
-    }
-}
+         }}
