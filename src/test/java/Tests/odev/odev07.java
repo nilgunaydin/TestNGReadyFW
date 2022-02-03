@@ -1,11 +1,30 @@
 package Tests.odev;
 
-public class odev07 {
-    // 4 TEST METODU OLUSTURUN,oncelik vererek sirasiyla
-    // https://www.n11.com/ SAYFASINA GiDİN.
-    // https://www.gittigidiyor.com/ SAYFASINA GiDiN
-    // https://getir.com/ SAYFASINA GiDiN
-    // https://www.sahibinden.com/ SAYFASINA GiDiN
+import org.testng.annotations.Test;
+import utilities.TestBase;
+
+public class odev07 extends TestBase {
+    @Test (priority = 3)
+    public void test01 () {
+        driver.get("https://www.sahibinden.com/");
+    }
+
+    @Test (priority = 2)
+    public void test02 () {
+        driver.get("https://getir.com/");
+    }
+
+    @Test (priority = 1)
+    public void test03 () {
+        driver.get("https://www.gittigidiyor.com/");
+    }
+
+
+    @Test
+    public void test04 () {
+        driver.get("https://www.n11.com/");
+    }
+
 
 
 

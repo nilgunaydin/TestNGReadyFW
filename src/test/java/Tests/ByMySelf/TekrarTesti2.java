@@ -23,7 +23,7 @@ public class TekrarTesti2 extends TestBase {
 select.selectByVisibleText("Electronics");//2. yontem ile
 //select.selectByValue("search-alias=electronics-intl-ship"); //3.yontem
 
-    //2-)Arama Kutusuna iphone yazip Aratin ve bulunan sonuc sayisini yazdirin
+    //2-)Arama Kutusuna iphone cable yazip Aratin ve bulunan sonuc sayisini yazdirin
 
         WebElement searchBox = driver.findElement(By.id("twotabsearchtextbox"));
         searchBox.sendKeys("iphone cable", Keys.ENTER);
