@@ -43,4 +43,5 @@ Assert.assertTrue(driver.findElement(By.xpath("//div[@class='sg-col-inner']")).g
        Assert.assertTrue(Intprice<10);
         driver.findElement(By.id("add-to-cart-button")).click();
        driver.findElement(By.xpath("//div[@id='nav-cart-count-container']")).click();
+
 }}
