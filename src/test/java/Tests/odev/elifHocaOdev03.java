@@ -8,7 +8,7 @@ import utilities.TestBase;
 
 import java.time.Duration;
 
-public class elifOdev03 extends TestBase {
+public class elifHocaOdev03 extends TestBase {
 
     //go to web site : https://www.jqueryscript.net/demo/bootstrap-alert-box/
     //maximize the window

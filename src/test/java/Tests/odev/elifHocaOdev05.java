@@ -3,18 +3,12 @@ package Tests.odev;
 import com.github.javafaker.Faker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 
-import java.time.Duration;
-
-public class elifOdev05 extends TestBase {
+public class elifHocaOdev05 extends TestBase {
 @Test
 public void testPhoneNumber() throws InterruptedException {
     //twitter a faker class kullanarak kayit olmaya calisiniz

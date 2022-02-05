@@ -14,7 +14,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class elifOdev02 {
+public class elifHocaOdev02 {
 
     /*
       ...Exercise2...
