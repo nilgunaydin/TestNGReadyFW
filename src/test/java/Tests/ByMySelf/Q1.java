@@ -3,11 +3,13 @@ package Tests.ByMySelf;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import utilities.TestBase;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class Q1  extends TestBase {
@@ -39,10 +41,18 @@ select.selectByIndex(2);
         // *     T2 : Verify item prices are sorted from low to high with soft Assert
 List<WebElement> list = driver.findElements(By.xpath("//div[@class='inventory_item_price']"));
 
-List<Integer> listOfPrices = new ArrayList();
+List<Double> listOfPrices = new ArrayList();
 
+        for (WebElement price : list) {
+        Double sayi = Double.parseDouble(price.getText().replace("$",""));
+        listOfPrices.add(sayi);
+        }
+                 List<Double> sortedPrices = listOfPrices;
+        Collections.sort(sortedPrices);
+Assert.assertEquals(sortedPrices,listOfPrices);
 
+}
     }
 
 
-}
+
