@@ -39,6 +39,8 @@ public class odev08 extends TestBase {
        for (WebElement w:listOfWEyears) {
            listOfyears.add(w.getText());
        }
+
        System.out.println(listOfyears);
+
 }
 }

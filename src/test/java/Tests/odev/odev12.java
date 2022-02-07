@@ -25,7 +25,7 @@ List<WebElement> listOfProducts = driver.findElements(By.xpath("//p[@class='shel
         counter++;
         }
 
-        System.out.println("\n******************************************************\n");
+        System.out.println("\n**********************************************************\n");
 // 3.Stringlerden olusan bir ArrayList oluşturun ve Ürün Adlarını ArrayList'e yerleştirin
         List<String>NamesOfProducts = new ArrayList();
         for (WebElement product : listOfProducts){
