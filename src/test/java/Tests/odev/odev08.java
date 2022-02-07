@@ -40,5 +40,6 @@ public class odev08 extends TestBase {
            listOfyears.add(w.getText());
        }
        System.out.println(listOfyears);
+
 }
 }
